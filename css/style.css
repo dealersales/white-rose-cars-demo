@@ -84,3 +84,6 @@ iframe[class*="lazyload"] { background: #f0f3f5; }
 
 /* White Rose: keep the hero headline legible over any car photograph */
 #hero-wrap.hero-3 .caption{background:linear-gradient(90deg,rgba(9,11,15,.95) 0%,rgba(9,11,15,.90) 42%,rgba(9,11,15,.45) 66%,rgba(9,11,15,0) 86%)}
+
+/* White Rose: hero headline contrast over any car photograph */
+#hero-wrap.hero-3 .caption{background:linear-gradient(90deg,rgba(9,11,15,.96) 0%,rgba(9,11,15,.92) 40%,rgba(9,11,15,.5) 66%,rgba(9,11,15,0) 88%) !important}
