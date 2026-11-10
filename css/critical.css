@@ -42,3 +42,8 @@ header[id^=header] .logo img{display:block;height:44px;width:auto}
 
 /* White Rose: hero headline contrast over any car photograph */
 #hero-wrap.hero-3 .caption{background:linear-gradient(90deg,rgba(9,11,15,.96) 0%,rgba(9,11,15,.92) 40%,rgba(9,11,15,.5) 66%,rgba(9,11,15,0) 88%) !important}
+
+/* Active FAQ: blue panel, white text (hover/focus must not beat it) */
+.accordion .accordion-button:not(.collapsed),
+.accordion .accordion-button:not(.collapsed):hover,
+.accordion .accordion-button:not(.collapsed):focus{background-color:#1c5a96;color:#fff}
