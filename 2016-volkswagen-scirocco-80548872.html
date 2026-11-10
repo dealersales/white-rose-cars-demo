@@ -29,7 +29,7 @@
     <!-- Critical CSS -->
     <link href="css/critical.css?v=1794310951" rel="stylesheet">
     <!-- Custom Styles -->
-    <link href="css/style.css?v=1794310951" rel="stylesheet">
+    <link href="css/style.css?v=1794314918" rel="stylesheet">
     <!-- Font Awesome (core + solid + brands only) -->
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" onload="this.rel='stylesheet'">
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" onload="this.rel='stylesheet'">
@@ -110,7 +110,10 @@
     "fuelType": "Diesel",
     "color": "Black",
     "bodyType": "",
-    "vehicleEngine": null,
+    "vehicleEngine": {
+        "@type": "EngineSpecification",
+        "engineDisplacement": 2000
+    },
     "offers": {
         "@type": "Offer",
         "price": 7295,
@@ -352,7 +355,7 @@
                         <h2 class="fs-5 opacity-75 text-wrap mb-0">2.0 TDi 184 BlueMotion Tech GT 3dr DSG</h2>
                     </div>
 
-                    <ul class="list-unstyled row g-2 flex-wrap mb-0 w-100 vdp-specs"><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">2016 (16 reg)</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">105,000mi</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Automatic</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Diesel</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Black</strong></div></li></ul>
+                    <ul class="list-unstyled row g-2 flex-wrap mb-0 w-100 vdp-specs"><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">2016 (16 reg)</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">105,000mi</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Automatic</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">2L Diesel</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Black</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">3 door</strong></div></li></ul>
                     <div class="vstack gap-2">
                         <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vehicleEnquiryModal">Enquire now</button>
                         <a class="btn btn-primary-l" href="sell-your-car.html?id=FA16UGF">Part Exchange</a>
@@ -1621,7 +1624,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
         <ul class="ps-specs">
-        <li>2016 (16 reg)</li><li>105,000mi</li><li>Automatic</li><li>Diesel</li><li>Black</li>    </ul>
+        <li>2016 (16 reg)</li><li>105,000mi</li><li>Automatic</li><li>2L Diesel</li><li>3 door</li><li>Black</li>    </ul>
     
             <div class="ps-gallery">
                 <img src="assets/stock/80548872.jpg" alt="Volkswagen Scirocco photo 1" width="320" height="213">
@@ -1672,7 +1675,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="opening-hours">
                                 <div class="department-hours mb-2">
                                     <div class="is-open-container">
-                                                                                <div class="is-closed p-1 fw-bold px-3 rounded text-uppercase rounded-bottom-0 d-inline-block bg-opacity-100 text-bg-secondary">We are Closed</div>
+                                                                                <div class="is-closed p-1 fw-bold px-3 rounded text-uppercase rounded-bottom-0 d-inline-block bg-opacity-100 text-bg-secondary">We are Open</div>
                                                                             </div>
                                     <div class="vstack gap-3 my-3 small">
                                         <div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Viewings</div></div><div class="col-6 times"><div class="time text-end fw-bold">By appointment</div></div></div><div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Evenings &amp; weekends</div></div><div class="col-6 times"><div class="time text-end fw-bold">Available</div></div></div>                                        <p class="small opacity-75 mb-0">Viewing by appointment only.</p>

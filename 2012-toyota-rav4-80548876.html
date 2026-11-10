@@ -29,7 +29,7 @@
     <!-- Critical CSS -->
     <link href="css/critical.css?v=1794310951" rel="stylesheet">
     <!-- Custom Styles -->
-    <link href="css/style.css?v=1794310951" rel="stylesheet">
+    <link href="css/style.css?v=1794314918" rel="stylesheet">
     <!-- Font Awesome (core + solid + brands only) -->
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" onload="this.rel='stylesheet'">
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" onload="this.rel='stylesheet'">
@@ -110,7 +110,10 @@
     "fuelType": "Diesel",
     "color": "Grey",
     "bodyType": "",
-    "vehicleEngine": null,
+    "vehicleEngine": {
+        "@type": "EngineSpecification",
+        "engineDisplacement": 2200
+    },
     "offers": {
         "@type": "Offer",
         "price": 4495,
@@ -352,7 +355,7 @@
                         <h2 class="fs-5 opacity-75 text-wrap mb-0">2.2 D-4D XT-R 5dr</h2>
                     </div>
 
-                    <ul class="list-unstyled row g-2 flex-wrap mb-0 w-100 vdp-specs"><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">2012 (12 reg)</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">99,899mi</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Manual</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Diesel</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Grey</strong></div></li></ul>
+                    <ul class="list-unstyled row g-2 flex-wrap mb-0 w-100 vdp-specs"><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">2012 (12 reg)</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">99,899mi</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Manual</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">2.2L Diesel</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Grey</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">5 door</strong></div></li></ul>
                     <div class="vstack gap-2">
                         <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vehicleEnquiryModal">Enquire now</button>
                         <a class="btn btn-primary-l" href="sell-your-car.html?id=YY62BZU">Part Exchange</a>
@@ -1625,7 +1628,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
         <ul class="ps-specs">
-        <li>2012 (12 reg)</li><li>99,899mi</li><li>Manual</li><li>Diesel</li><li>Grey</li>    </ul>
+        <li>2012 (12 reg)</li><li>99,899mi</li><li>Manual</li><li>2L Diesel</li><li>5 door</li><li>Grey</li>    </ul>
     
         
             <h2>Description</h2>
@@ -1673,7 +1676,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="opening-hours">
                                 <div class="department-hours mb-2">
                                     <div class="is-open-container">
-                                                                                <div class="is-closed p-1 fw-bold px-3 rounded text-uppercase rounded-bottom-0 d-inline-block bg-opacity-100 text-bg-secondary">We are Closed</div>
+                                                                                <div class="is-closed p-1 fw-bold px-3 rounded text-uppercase rounded-bottom-0 d-inline-block bg-opacity-100 text-bg-secondary">We are Open</div>
                                                                             </div>
                                     <div class="vstack gap-3 my-3 small">
                                         <div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Viewings</div></div><div class="col-6 times"><div class="time text-end fw-bold">By appointment</div></div></div><div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Evenings &amp; weekends</div></div><div class="col-6 times"><div class="time text-end fw-bold">Available</div></div></div>                                        <p class="small opacity-75 mb-0">Viewing by appointment only.</p>
