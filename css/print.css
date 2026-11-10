@@ -1,0 +1,173 @@
+/* Print stylesheet — clean vehicle spec sheet (photos + details only) */
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 12mm;
+    }
+
+    html,
+    body {
+        background: #fff !important;
+        color: #000 !important;
+        font-size: 9.5pt;
+        line-height: 1.35;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+    }
+
+    /* Print the spec sheet only — no site chrome, backgrounds or interactive UI */
+    body > *:not(#printSheet) {
+        display: none !important;
+    }
+
+    #printSheet {
+        display: block !important;
+        position: static;
+        width: 100%;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #printSheet * {
+        color: #000 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    #printSheet img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border: 1px solid #ccc;
+        print-color-adjust: economy;
+        -webkit-print-color-adjust: economy;
+    }
+
+    .ps-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 2px solid #222c8b;
+        padding-bottom: 3mm;
+        margin-bottom: 4mm;
+    }
+
+    .ps-dealer {
+        font-size: 15pt;
+        font-weight: 700;
+        color: #222c8b !important;
+        letter-spacing: .3px;
+    }
+
+    .ps-contact,
+    .ps-ref {
+        font-size: 8.5pt;
+    }
+
+    .ps-title {
+        font-size: 15pt;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 3mm;
+    }
+    .ps-price-row {
+        display: flex;
+        align-items: baseline;
+        gap: 8mm;
+        flex-wrap: wrap;
+        margin-bottom: 4mm;
+    }
+
+    .ps-price {
+        font-size: 19pt;
+        font-weight: 700;
+    }
+
+    .ps-monthly {
+        font-size: 11pt;
+        font-weight: 700;
+    }
+
+    .ps-monthly span {
+        display: block;
+        font-size: 7.5pt;
+        font-weight: 400;
+    }
+
+    .ps-specs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2mm;
+        list-style: none;
+        padding: 0;
+        margin: 0 0 4mm;
+    }
+
+    .ps-specs li {
+        border: 1px solid #999;
+        border-radius: 2mm;
+        padding: 1.4mm 2.5mm;
+        font-size: 8.5pt;
+    }
+
+    .ps-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3mm;
+        margin-bottom: 5mm;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .ps-gallery img {
+        width: calc(33.333% - 2mm);
+    }
+
+    .ps-desc {
+        font-size: 9pt;
+        margin: 0 0 4mm;
+    }
+
+    #printSheet h2 {
+        font-size: 11pt;
+        font-weight: 700;
+        border-bottom: 1px solid #bbb;
+        padding-bottom: 1mm;
+        margin: 5mm 0 2.5mm;
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    .ps-features {
+        columns: 3;
+        column-gap: 5mm;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 7.6pt;
+    }
+
+    .ps-features li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: .8mm;
+        padding-left: 3mm;
+        text-indent: -3mm;
+    }
+
+    .ps-note {
+        font-size: 7.5pt;
+        font-style: italic;
+        margin: 2mm 0 0;
+    }
+
+    .ps-foot {
+        border-top: 1px solid #bbb;
+        margin-top: 5mm;
+        padding-top: 2mm;
+        font-size: 7.5pt;
+    }
+}
