@@ -367,3 +367,19 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(function () { scrub(el); }, 15000);
         });
     })();
+
+// Demo variant B: buying / servicing mode switch
+(function () {
+    var btns = [].slice.call(document.querySelectorAll('.mode-switch__btn'));
+    if (!btns.length) return;
+    function setMode(m) {
+        if (m === 'service') document.body.setAttribute('data-mode', 'service');
+        else document.body.removeAttribute('data-mode');
+        btns.forEach(function (b) { b.classList.toggle('is-active', b.dataset.mode === m); });
+        try { localStorage.setItem('wrMode', m); } catch (e) {}
+    }
+    btns.forEach(function (b) { b.addEventListener('click', function () { setMode(b.dataset.mode); }); });
+    var saved = 'buy';
+    try { saved = localStorage.getItem('wrMode') || 'buy'; } catch (e) {}
+    setMode(saved);
+})();

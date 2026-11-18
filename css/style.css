@@ -130,3 +130,17 @@ iframe[class*="lazyload"] { background: #f0f3f5; }
 .door-card:hover{border-color:#d2003c;transform:translateY(-2px)}
 .door-card .ratio img{transition:.4s transform}
 .door-card:hover .ratio img{transform:scale(1.03)}
+
+/* Demo variant B: buying / servicing mode switch */
+.mode-switch-wrap{background:#0e0e0e;padding:.5rem 0}
+.mode-switch{display:inline-flex;background:#1d1d1b;border:1px solid #333;border-radius:999px;padding:4px;gap:4px}
+.mode-switch__btn{background:transparent;border:0;color:#fff;font-weight:600;font-size:.9rem;padding:.45rem 1.1rem;border-radius:999px;opacity:.7;cursor:pointer}
+.mode-switch__btn:hover{opacity:1}
+.mode-switch__btn.is-active{background:#d2003c;opacity:1}
+/* Demo variant C: workshop sub-brand strip */
+.subbrand-strip{background:#d2003c;color:#fff;padding:.55rem 0;font-size:.95rem}
+.subbrand-strip__note{opacity:.8;font-size:.85rem}
+@media(max-width:575px){.subbrand-strip__note{display:none}}
+/* mode visibility */
+body[data-mode="service"] [data-mode="buy"]{display:none !important}
+body:not([data-mode="service"]) [data-mode="service"]{display:none !important}
