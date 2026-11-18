@@ -142,5 +142,5 @@ iframe[class*="lazyload"] { background: #f0f3f5; }
 .subbrand-strip__note{opacity:.8;font-size:.85rem}
 @media(max-width:575px){.subbrand-strip__note{display:none}}
 /* mode visibility */
-body[data-mode="service"] [data-mode="buy"]{display:none !important}
-body:not([data-mode="service"]) [data-mode="service"]{display:none !important}
+body[data-mode="service"] [data-mode-panel="buy"]{display:none !important}
+body:not([data-mode="service"]) [data-mode-panel="service"]{display:none !important}
