@@ -17,6 +17,8 @@ Live preview: https://dealersales.github.io/white-rose-cars-demo/
   supplied on 18 November 2026, keeping his wording; the wet belt page is ours (his set did not include one).
 - **Real:** the phone number, the email address and the address, which is now Larchfield Road — the business
   has moved from 408 Oakwood Lane.
+- **Palette:** red, white and black, with Red Bull red `#d2003c` as the accent (sampled from the official
+  logo SVG; white on it is 5.52:1).
 - **Not real:** the design, the copy around the cars, and the photography treatment.
 - **Not included:** finance rates or a representative example, reviews, a live Carro stock feed, a
   CodeWeavers finance widget, any company or FCA number, and any servicing price — the £79/£99 starting price
