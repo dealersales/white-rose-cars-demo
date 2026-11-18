@@ -31,7 +31,7 @@
     <!-- Critical CSS -->
     <link href="css/critical.css?v=1795008647" rel="stylesheet">
     <!-- Custom Styles -->
-    <link href="css/style.css?v=1795008756" rel="stylesheet">
+    <link href="css/style.css?v=1795016814" rel="stylesheet">
     <!-- Font Awesome (core + solid + brands only) -->
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" onload="this.rel='stylesheet'">
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" onload="this.rel='stylesheet'">
@@ -153,7 +153,7 @@
                             <li class="Home nav-item active"><a href="index.html" class="nav-link">Home</a></li>
                             <li class="Stock nav-item"><a href="stock.html" class="nav-link">Cars</a></li>
                             <li class="Servicing nav-item"><a href="servicing.html" class="nav-link">Servicing</a></li>
-                            <li class="ServiceMot nav-item d-none d-lg-block"><a href="servicing-service-and-mot.html" class="nav-link btn btn-dark text-white px-3 ms-lg-2">Service &amp; MOT</a></li>
+                            <li class="ServiceBook nav-item d-none d-lg-block"><a href="contact.html" class="nav-link btn btn-dark text-white px-3 ms-lg-2">Book a service</a></li>
                             <li class="Finance nav-item"><a href="finance.html" class="nav-link">Finance</a></li>
                             <li class="Warranty nav-item"><a href="warranty.html" class="nav-link">Warranty</a></li>
                             <li class="SellYourCar nav-item"><a href="sell-your-car.html" class="nav-link">Part Exchange</a></li>
@@ -162,7 +162,7 @@
                             <li class="AboutUs nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
                             <li class="ContactUs nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                             <li class="d-lg-none nav-item"><a href="servicing.html" class="nav-link">Servicing</a></li>
-                            <li class="d-lg-none nav-item"><a href="servicing-service-and-mot.html" class="nav-link">Service &amp; MOT</a></li>
+                            <li class="d-lg-none nav-item"><a href="contact.html" class="nav-link">Book a service</a></li>
                             <li class="d-lg-none nav-item mt-auto"><a href="tel:07960015378" class="nav-link d-flex justify-content-between">Call Us: <strong class="ms-auto">07960 015378</strong></a></li>
                             <li class="d-lg-none nav-item text-center">
                                 <div class="nav-link">
@@ -355,6 +355,50 @@
             <div class="col-md-4 col-lg-5 col-xl-4">
                 <div id="aside" class="sticky-lg-top vstack gap-3"><div class="card text-bg-primary"><div class="card-body"><div class="h5 mb-2">Contact Details</div><div class="vstack gap-2"><a href="https://www.google.com/maps/search/?api=1&query=Unit+4%2C+Sancorp+Business+Park%2C+17+Larchfield+Road%2C+Leeds%2C+LS10+1QP" class="d-inline-flex contact-address" target="_blank" rel="noopener"><i class="fa-solid fa-fw fa-location-dot flex-shrink-0 me-2 mt-1 text-secondary"></i><span>Unit 4, Sancorp Business Park, 17 Larchfield Road, Leeds, LS10 1QP</span></a><a href="tel:07960015378"><i class="fa-solid fa-fw fa-phone text-secondary me-2"></i>07960 015378</a><a href="mailto:rafa11@hotmail.co.uk"><i class="fa-solid fa-fw fa-envelope text-secondary me-2"></i>rafa11@hotmail.co.uk</a></div><div class="divider border-bottom border-white border-opacity-10 my-3"></div><span class="social"></span></div></div><div class="card text-bg-primary-l"><div class="card-body"><div class="opening-hours"><div class="department-hours mb-2"><div class="is-open-container"><div class="is-open p-1 fw-bold px-3 rounded text-uppercase rounded-bottom-0 d-inline-block bg-opacity-100 text-bg-secondary">We are Open</div></div><div class="vstack gap-3 my-3 small"><div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Viewings</div></div><div class="col-6 times"><div class="time text-end fw-bold">By appointment</div></div></div><div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Evenings &amp; weekends</div></div><div class="col-6 times"><div class="time text-end fw-bold">Available</div></div></div></div><p class="small opacity-75 mb-0">Viewing by appointment only.</p></div></div></div></div></div>            </div>
         </div>
+    </div>
+</section>
+
+<!-- Two doors: buying a car, or booking the workshop -->
+<section id="two-doors" class="py-4 py-lg-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <a class="card h-100 text-decoration-none text-reset door-card" href="stock.html">
+                    <div class="ratio" style="--bs-aspect-ratio: 42%;">
+                        <img src="assets/hero1.jpg" class="w-100 h-100 object-fit-cover" alt="Used cars for sale at White Rose Cars in Leeds">
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fa-solid fa-car-side text-secondary"></i>
+                            <span class="small text-uppercase fw-bold opacity-75">Buying a car</span>
+                        </div>
+                        <h2 class="h3 mb-2">Browse the cars</h2>
+                        <p class="mb-3">7 used cars in stock from £2,795 to £7,495 &mdash;
+                            part exchange welcome, viewings by appointment, nationwide delivery.</p>
+                        <span class="btn btn-secondary">View the stock</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a class="card h-100 text-decoration-none text-reset door-card" href="servicing.html">
+                    <div class="ratio" style="--bs-aspect-ratio: 42%;">
+                        <img src="assets/hero4.jpg" class="w-100 h-100 object-fit-cover" alt="Servicing and MOT at White Rose Car Centre in Leeds">
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="fa-solid fa-screwdriver-wrench text-secondary"></i>
+                            <span class="small text-uppercase fw-bold opacity-75">Servicing &amp; MOT</span>
+                        </div>
+                        <h2 class="h3 mb-2">Book the workshop</h2>
+                        <p class="mb-3">Interim, full and major services, Class 4 MOT testing, clutches, cambelts and
+                            wet belts &mdash; at the same address, quoted before we start.</p>
+                        <span class="btn btn-dark">See what we do</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <p class="small text-center opacity-75 mt-3 mb-0">Servicing and MOT are carried out by White Rose Car Centre,
+            our workshop at the same address.</p>
     </div>
 </section>
 
@@ -554,50 +598,6 @@
             <a class="btn btn-outline-light" href="finance.html">Explore Finance</a>
             <a class="btn btn-secondary" href="stock.html">Browse Cars</a>
             <a class="btn btn-outline-light" href="contact.html">Contact Us</a>
-        </div>
-    </div>
-</section>
-
-<!-- Servicing & MOT -->
-<section id="servicing-band" class="py-4 py-lg-5">
-    <div class="container">
-        <div class="row g-4 align-items-center">
-            <div class="col-lg-5">
-                <div class="h2 mb-2">Servicing &amp; MOT in Leeds</div>
-                <div class="divider sm border-bottom border-secondary my-3 opacity-50"></div>
-                <p class="mb-3">We run our own workshop at the same address: interim, full and major services,
-                    Class 4 MOT testing, and the repairs that follow &mdash; plus clutches, cambelts and wet
-                    belts. Quoted before we start, and we tell you what can wait.</p>
-                <a class="btn btn-secondary" href="servicing.html">All servicing</a>
-            </div>
-            <div class="col-lg-7">
-                <div class="row row-cols-1 row-cols-sm-2 g-3">
-                    <div class="col"><a class="card h-100 text-decoration-none text-reset" href="servicing-service-and-mot.html">
-                        <div class="card-body d-flex gap-3 align-items-start">
-                            <i class="fa-solid fa-clipboard-check fa-2x text-secondary"></i>
-                            <div><div class="h6 mb-1">Service &amp; MOT package</div>
-                            <div class="small opacity-75">One visit, one price</div></div>
-                        </div></a></div>
-                    <div class="col"><a class="card h-100 text-decoration-none text-reset" href="servicing-mot-testing.html">
-                        <div class="card-body d-flex gap-3 align-items-start">
-                            <i class="fa-solid fa-certificate fa-2x text-secondary"></i>
-                            <div><div class="h6 mb-1">MOT testing</div>
-                            <div class="small opacity-75">Class 4, cars and light vans</div></div>
-                        </div></a></div>
-                    <div class="col"><a class="card h-100 text-decoration-none text-reset" href="servicing-clutch-replacement.html">
-                        <div class="card-body d-flex gap-3 align-items-start">
-                            <i class="fa-solid fa-gears fa-2x text-secondary"></i>
-                            <div><div class="h6 mb-1">Clutch replacement</div>
-                            <div class="small opacity-75">Slipping, juddering, heavy pedal</div></div>
-                        </div></a></div>
-                    <div class="col"><a class="card h-100 text-decoration-none text-reset" href="servicing-wet-belt-replacement.html">
-                        <div class="card-body d-flex gap-3 align-items-start">
-                            <i class="fa-solid fa-droplet fa-2x text-secondary"></i>
-                            <div><div class="h6 mb-1">Wet belt replacement</div>
-                            <div class="small opacity-75">The belt that runs in oil</div></div>
-                        </div></a></div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
