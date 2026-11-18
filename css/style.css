@@ -104,3 +104,10 @@ iframe[class*="lazyload"] { background: #f0f3f5; }
 @media(min-width:768px){
   .makes-grid__item{flex:0 0 calc(25% - .75rem);max-width:calc(25% - .75rem)}
 }
+
+/* White Rose logo sizing: keep the mark's own ratio in the fixed header */
+.logo img{width:auto !important;max-height:64px}
+@media(max-width:991px){.logo img{max-height:48px}}
+
+/* Inner-page hero (render_page_hero): keep the title legible over a car photo */
+#hero-wrap .caption-wrap{background:linear-gradient(180deg,rgba(9,11,15,.55) 0%,rgba(9,11,15,.35) 45%,rgba(9,11,15,.6) 100%)}
