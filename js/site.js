@@ -379,7 +379,8 @@ document.addEventListener('DOMContentLoaded', function() {
         try { localStorage.setItem('wrMode', m); } catch (e) {}
     }
     btns.forEach(function (b) { b.addEventListener('click', function () { setMode(b.dataset.mode); }); });
-    var saved = 'buy';
-    try { saved = localStorage.getItem('wrMode') || 'buy'; } catch (e) {}
+    var qs = new URLSearchParams(location.search);
+    var saved = qs.get('mode') || 'buy';
+    if (!qs.get('mode')) { try { saved = localStorage.getItem('wrMode') || 'buy'; } catch (e) {} }
     setMode(saved);
 })();
