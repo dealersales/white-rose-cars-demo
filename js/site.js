@@ -367,3 +367,14 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(function () { scrub(el); }, 15000);
         });
     })();
+
+// Contact page: arriving from a servicing page sets the enquiry up as a booking
+(function () {
+    if (!/contact/.test(location.pathname)) return;
+    var qs = new URLSearchParams(location.search);
+    if (qs.get('subject') !== 'service') return;
+    var subject = document.querySelector('input[name="Subject"]');
+    if (subject) subject.value = 'Service booking';
+    var message = document.querySelector('textarea[name="Message"]');
+    if (message) message.placeholder = 'The car (make, model and registration) and what it needs — service, MOT, or the job you want quoting';
+})();
