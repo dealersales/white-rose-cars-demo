@@ -161,3 +161,14 @@ body:not([data-mode="service"]) [data-mode-panel="service"]{display:none !import
 /* Mode badge sits level with the nav links, not floating above them */
 .ModeBadge{display:flex;align-items:center;height:100%}
 .ModeBadge .mode-badge{margin:0}
+
+/* The buying / servicing switch — one component, hero-sized on the homepage and compact on listings */
+.mode-switch-row .btn{font-weight:600}
+.mode-switch-row [data-mode-btn].is-active{background:#d2003c;border:1px solid #d2003c;color:#fff}
+.mode-switch-row [data-mode-btn].is-active:hover{background:#a80030;border-color:#a80030}
+.mode-switch-row [data-mode-btn]:not(.is-active){background:#fff;border:1px solid #e3e6ea;color:#121212}
+.mode-switch-row [data-mode-btn]:not(.is-active):hover{background:#f0f3f5;border-color:#d7dbe0}
+.mode-switch-row--sm [data-mode-btn]:not(.is-active){background:#fff;border-color:#d7dbe0}
+@media (max-width: 575.98px){ .mode-switch-row .btn{flex:1 1 0} }
+/* the hero is a flex box, so the container must be told to span it */
+.service-hero > .container{width:100%}
