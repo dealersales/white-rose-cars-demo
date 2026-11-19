@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', function() {
         else document.body.removeAttribute('data-mode');
         btns.forEach(function (b) { b.classList.toggle('is-active', b.dataset.modeBtn === m); });
         labels.forEach(function (l) { l.textContent = (m === 'service') ? 'Servicing' : 'Buying'; });
-        toggles.forEach(function (t) { t.setAttribute('href', '/?mode=' + (m === 'service' ? 'buy' : 'service')); });
+        toggles.forEach(function (t) { t.setAttribute('href', (t.dataset.base || '/') + '?mode=' + (m === 'service' ? 'buy' : 'service')); });
         try { localStorage.setItem('wrMode', m); } catch (e) {}
     }
     function current() { return document.body.getAttribute('data-mode') === 'service' ? 'service' : 'buy'; }
