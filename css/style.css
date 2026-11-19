@@ -144,3 +144,16 @@ iframe[class*="lazyload"] { background: #f0f3f5; }
 /* mode visibility */
 body[data-mode="service"] [data-mode-panel="buy"]{display:none !important}
 body:not([data-mode="service"]) [data-mode-panel="service"]{display:none !important}
+
+/* Demo variant B: the switch is the hero CTA pair; a compact badge in the nav shows the mode */
+.hero-switch .btn{font-weight:600}
+.hero-switch [data-mode-btn].is-active{background:#d2003c;border:1px solid #d2003c;color:#fff}
+.hero-switch [data-mode-btn].is-active:hover{background:#a80030;border-color:#a80030}
+.hero-switch [data-mode-btn]:not(.is-active){background:#fff;border:1px solid #fff;color:#121212}
+.hero-switch [data-mode-btn]:not(.is-active):hover{background:#f0f3f5;border-color:#f0f3f5}
+.mode-badge{background:#121212;color:#fff;border:1px solid #121212;border-radius:6px;font-size:.8rem;font-weight:600;line-height:1;padding:.35rem .7rem;white-space:nowrap}
+.mode-badge:hover,.mode-badge:focus{background:#000;color:#fff}
+.mode-badge--wide{width:100%;text-align:left;border-radius:0;padding:.6rem .75rem;font-size:1rem;line-height:1.2}
+
+/* Service-mode hero: gradient baked into the background so the copy always has contrast */
+.service-hero{background:linear-gradient(90deg,rgba(9,11,15,.97) 0%,rgba(9,11,15,.92) 42%,rgba(9,11,15,.62) 72%,rgba(9,11,15,.38) 100%),url('/assets/hero4.jpg') center/cover no-repeat;min-height:420px;display:flex;align-items:center}

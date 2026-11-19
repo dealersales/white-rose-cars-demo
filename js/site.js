@@ -370,15 +370,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Demo variant B: buying / servicing mode switch
 (function () {
-    var btns = [].slice.call(document.querySelectorAll('.mode-switch__btn'));
-    if (!btns.length) return;
+    var btns = [].slice.call(document.querySelectorAll('[data-mode-btn]'));
+    var labels = [].slice.call(document.querySelectorAll('[data-mode-label]'));
+    var toggles = [].slice.call(document.querySelectorAll('[data-mode-toggle]'));
+    if (!btns.length && !labels.length) return;
     function setMode(m) {
         if (m === 'service') document.body.setAttribute('data-mode', 'service');
         else document.body.removeAttribute('data-mode');
-        btns.forEach(function (b) { b.classList.toggle('is-active', b.dataset.mode === m); });
+        btns.forEach(function (b) { b.classList.toggle('is-active', b.dataset.modeBtn === m); });
+        labels.forEach(function (l) { l.textContent = (m === 'service') ? 'Servicing' : 'Buying'; });
         try { localStorage.setItem('wrMode', m); } catch (e) {}
     }
-    btns.forEach(function (b) { b.addEventListener('click', function () { setMode(b.dataset.mode); }); });
+    function current() { return document.body.getAttribute('data-mode') === 'service' ? 'service' : 'buy'; }
+    btns.forEach(function (b) { b.addEventListener('click', function () { setMode(b.dataset.modeBtn); }); });
+    toggles.forEach(function (t) { t.addEventListener('click', function () { setMode(current() === 'service' ? 'buy' : 'service'); }); });
     var qs = new URLSearchParams(location.search);
     var saved = qs.get('mode') || 'buy';
     if (!qs.get('mode')) { try { saved = localStorage.getItem('wrMode') || 'buy'; } catch (e) {} }
